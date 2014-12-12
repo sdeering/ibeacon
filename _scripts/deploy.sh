@@ -2,7 +2,7 @@
 echo "Running deploy script."
 cd /opt/bitnami/apache2
 git reset --hard HEAD
-git pull
+git pull origin master
 \cp -f _config/ENV-PROD.php _config/ENV.php
 touch /cache.flush
 echo "Deploy has finished."
