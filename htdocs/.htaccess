@@ -252,6 +252,7 @@ AddDefaultCharset utf-8
 
     # Other
     RewriteRule ^add.php$ api/add.php [NC,QSA,L]
-    RewriteRule ^remove.php$ api/remove.php [NC,QSA,L]
+    RewriteRule ^remove.php$ api/delete.php [NC,QSA,L]
+    RewriteRule ^delete.php$ api/remove.php [NC,QSA,L]
 
 </IfModule>
