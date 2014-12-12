@@ -1,7 +1,6 @@
 <?php
 
-	require_once('util.php');
-	require_once('db.php');
+	include_once('../../_src/setup.php');
 
 	//add a phone as active on i beacon
 
@@ -17,5 +16,7 @@
 	} else {
 		echo "error adding phone.";
 	}
+
+	include_once('../../_src/flush.php');
 
 ?>
